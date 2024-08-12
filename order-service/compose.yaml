@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: 'postgres:15.7'
+    container_name: 'postgres'
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d/
+      - ./db/data:/var/lib/postgresql/data
+    environment:
+      - 'POSTGRES_DB=orders_db'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5432:5432'
