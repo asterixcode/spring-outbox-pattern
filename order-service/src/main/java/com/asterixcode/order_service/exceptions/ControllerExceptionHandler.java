@@ -43,4 +43,16 @@ public class ControllerExceptionHandler {
 
     return ResponseEntity.badRequest().body(errors);
   }
+
+  @ExceptionHandler(Exception.class)
+  ResponseEntity<StandardError> handleException(
+      final Exception ex, final HttpServletRequest request) {
+    return ResponseEntity.status(INTERNAL_SERVER_ERROR)
+        .body(
+            new StandardError(
+                INTERNAL_SERVER_ERROR.value(),
+                INTERNAL_SERVER_ERROR.getReasonPhrase(),
+                ex.getMessage(),
+                request.getRequestURI()));
+  }
 }
