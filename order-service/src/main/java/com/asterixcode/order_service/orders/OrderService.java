@@ -1,8 +1,8 @@
-package com.asterixcode.orders;
+package com.asterixcode.order_service.orders;
 
-import com.asterixcode.outbox.Outbox;
-import com.asterixcode.exceptions.OutboxException;
-import com.asterixcode.outbox.OutboxRepository;
+import com.asterixcode.order_service.outbox.Outbox;
+import com.asterixcode.order_service.exceptions.OutboxException;
+import com.asterixcode.order_service.outbox.OutboxRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,6 +1,6 @@
-package com.asterixcode.orders;
+package com.asterixcode.order_service.orders;
 
-import com.asterixcode.exceptions.StandardError;
+import com.asterixcode.order_service.exceptions.StandardError;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

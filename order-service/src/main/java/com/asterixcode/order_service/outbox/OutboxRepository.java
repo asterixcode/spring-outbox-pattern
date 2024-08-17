@@ -1,7 +1,7 @@
-package com.asterixcode.orders;
+package com.asterixcode.order_service.outbox;
 
 import org.springframework.data.repository.ListCrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-interface OrderRepository extends ListCrudRepository<Order, Integer> {}
+public interface OutboxRepository extends ListCrudRepository<Outbox, Integer> {}

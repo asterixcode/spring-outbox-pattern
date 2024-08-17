@@ -1,4 +1,4 @@
-package com.asterixcode.orders;
+package com.asterixcode.order_service.orders;
 
 import java.math.BigDecimal;
 import java.util.Date;

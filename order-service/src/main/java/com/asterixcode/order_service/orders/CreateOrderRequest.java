@@ -1,4 +1,4 @@
-package com.asterixcode.orders;
+package com.asterixcode.order_service.orders;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.DecimalMin;

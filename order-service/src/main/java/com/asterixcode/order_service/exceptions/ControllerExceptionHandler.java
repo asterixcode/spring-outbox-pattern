@@ -1,4 +1,4 @@
-package com.asterixcode.exceptions;
+package com.asterixcode.order_service.exceptions;
 
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;

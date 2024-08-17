@@ -1,4 +1,4 @@
-package com.asterixcode.exceptions;
+package com.asterixcode.order_service.exceptions;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
