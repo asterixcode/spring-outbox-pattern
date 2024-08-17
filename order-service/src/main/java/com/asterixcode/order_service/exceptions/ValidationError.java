@@ -12,9 +12,9 @@ public class ValidationError extends StandardError {
     this.errors = errors;
   }
 
-  private record FieldError(String fieldName, String message) {}
-
   public void addError(final String fieldName, final String message) {
     this.errors.add(new FieldError(fieldName, message));
   }
+
+  public record FieldError(String fieldName, String message) {}
 }
