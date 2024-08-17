@@ -1,6 +1,6 @@
-package com.asterixcode.outbox;
+package com.asterixcode.order_puller.outbox;
 
-import com.asterixcode.orders.Order;
+import com.asterixcode.order_service.orders.Order;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Date;
