@@ -11,7 +11,7 @@ public record CreateOrderRequest(
         @NotBlank(message = "The name cannot be null or empty")
         String name,
     @Schema(description = "Customer ID", example = "1")
-        @NotBlank(message = "The customerId cannot be null or empty")
+        @Min(value = 1, message = "The customerId must be greater than 0")
         Integer customerId,
     @Schema(description = "Product type", example = "Computer")
         @NotBlank(message = "The productType cannot be null or empty")
